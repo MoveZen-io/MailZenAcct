@@ -1,0 +1,97 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MailZen</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/.
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/> -->
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <h1 align="left">&nbsp;&nbsp;Welcome!
+    <section class="ms-welcome__main">
+            <!-- create a link to a 2nd page named /knowledgebase -->
+            <a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/knowBaseFrame.html">Find a Knowledge Base Link</a>
+            <br><a href="https://chat.openai.com/" target="_blank">Ask GPT</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1J4-vAfinw3pq4jYNHX6fnpCEcHx-vmJt/view?usp=drive_link" target="_blank">NC State Manual Search</a>
+            <br>
+            <a href="https://movezen.sharepoint.com/:l:/s/Teams/FADtGwJJHLhChJQpR0ZyphcB95gmHSXLrS28EhJDqjyx2A?e=5QeMQ5" target="_blank">Maintenance Tips</a>
+
+        </h1><hr width="200">
+
+
+        <p align="center">Account Management</p>
+            
+            
+            <!-- TITLE HEADER Each column is a topic 1= Rental Leads 2= Current Residents  3=Owners   4=Misc -->
+            <div class="grid-container">
+
+
+                <div class="grid-header">
+                    <h1>Misc</h1>
+                </div>
+                <div class="grid-header">
+                    <h1>--</h1>
+                </div>
+                <div class="grid-header">
+                        <h1>--</h1>
+                </div>
+                <div class="grid-header">
+                        <h1>--</h1>
+                </div>
+
+                
+
+            
+                    
+                <!-- New Row 2 -->
+                
+                <div class="grid-item" id="shareP">
+                        <a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/sharepoint.html"><h1>Sharepoint</h1>
+                        <p>Example</p></a>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertPayslip"> 
+                        <h1>Use Payslip</h1>
+                        <p>Its Cheaper</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertOwnerMove">
+                        <h1>Owner Move</h1>
+                        <p>Notice-Resident Moving</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertVendor">
+                        <h1>Vendor</h1>
+                        <p>Onboard</p>
+                </div>
+                <!-- End of block -->
+        
+            
+
+
+      </section><br>
+      <h1 align="center">MoveZen Co-Pilot</h1>
+
+      <script src="https://movezen-io.github.io/MailZen/365Zen/src/commands/commands.js"></script>
+
+
+
+    
+</body>
+
+</html>

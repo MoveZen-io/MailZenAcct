@@ -1,0 +1,364 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MailZen</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/.
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/> -->
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <h1 align="left">&nbsp;&nbsp;Welcome Rina and Ashlee!
+    <section class="ms-welcome__main">
+            <!-- create a link to a 2nd page named /knowledgebase -->
+            <a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/knowBaseFrame.html">Find a Knowledge Base Link</a>
+            <br><a href="https://chat.openai.com/" target="_blank">Ask GPT</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1J4-vAfinw3pq4jYNHX6fnpCEcHx-vmJt/view?usp=drive_link" target="_blank">NC State Manual Search</a>
+            <br>
+            <a href="https://movezen.sharepoint.com/:l:/s/Teams/FADtGwJJHLhChJQpR0ZyphcB95gmHSXLrS28EhJDqjyx2A?e=5QeMQ5" target="_blank">Maintenance Tips</a>
+
+
+        </h1><hr width="200"><br>
+            
+            
+            <!-- TITLE HEADER Each column is a topic 1= Rental Leads 2= Current Residents  3=Owners   4=Misc -->
+            <div class="grid-container">
+
+
+                <div class="grid-header">
+                    <h1>Rent Lead</h1>
+                </div>
+                <div class="grid-header">
+                    <h1>Resident</h1>
+                </div>
+                <div class="grid-header">
+                        <h1>Owner</h1>
+                </div>
+                <div class="grid-header">
+                        <h1>Misc</h1>
+                </div>
+
+            
+
+
+
+            
+                    
+                <!-- New Row 2 -->
+                
+                <div class="grid-item" id="insertApp">
+                        <h1>Applica
+                            tion 
+                        </h1>
+                        <p>Kickoff</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertPayslip"> 
+                        <h1>Use Payslip</h1>
+                        <p>Its Cheaper</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertOwnerMove">
+                        <h1>Owner Move</h1>
+                        <p>Notice-Resident Moving</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertVendor">
+                        <h1>Vendor</h1>
+                        <p>Onboard</p>
+                </div>
+                <!-- End of block -->
+        
+            
+
+
+
+            
+            <!-- New Header Row 3 -->
+            
+            
+                <div class="grid-item" id="insertSorry">
+                        <h1>Sorry</h1>
+                        <p>It's Rented</p>
+                </div>
+                <div class="grid-item" id="insertRentalResponse">
+                        <h1>Rental</h1>
+                        <p>Response Kickoff</p>
+                </div>
+                <div class="grid-item" id="insertTurnoverReserve">
+                        <h1>Reserve for</h1>
+                        <p>Turnover Costs</p>
+                </div>
+                <div class="grid-item">
+                    <a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/links.html">
+                        <h1>Official Links</h1>
+                        <p>Important Issues</p>
+                    </a>
+                </div>
+                <!-- End of block -->
+        
+
+
+
+
+            <!-- New Row 4 -->
+            
+            <div class="grid-item" id="insertUtilityNotice">
+                    <h1>Utility</h1>
+                    <p>Connection Reminder</p>
+            </div>
+            <div class="grid-item" id="insertEvictNotice">
+                    <h1>Eviction</h1>
+                    <p>Imminent</p>
+            </div>
+            <div class="grid-item" id="insertPlacementInfo">
+                    <h1>Placement</h1>
+                    <p>Owner Update</p>
+            </div>
+            <div class="grid-item">
+                <a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/screenshots.html">
+                    <h1>Screen
+                        shots</h1>
+                    <p> of Crucial State
+                        Docs</p>
+                </a>
+            </div>
+            <!-- End of block -->
+
+
+
+
+
+            <!-- New Row 5 -->
+                        
+            <div class="grid-item" id="insertMoveInReminders">
+                    <h1>Move-In</h1>
+                    <p>Reminders</p>
+            </div>
+            <div class="grid-item" id="insertMoveInspectionRemind">
+                    <h1>Move-In</h1>
+                    <p>Inspection Reminder</p>
+            </div>
+            <div class="grid-item">
+                    <h1>--</h1>
+                    <p>--</p>
+            </div>
+            <div class="grid-item">
+                <a href="https://movezen.sharepoint.com/:l:/s/Teams/FBGAU23v1dRLnIe4FlzFMOcBrG4zUFbnjCkRyArZYSAJ7w?e=E5XraO" target="_blank">
+                    <h1>Snippets</h1>
+                    <p>Commonly useful text</p>
+                </a>
+            </div>
+            <!-- End of block -->
+
+
+
+
+
+            <!-- column header reminder  -->
+        <div class="grid-header">
+            <h1>Rent Lead</h1>
+        </div>
+        <div class="grid-header">
+            <h1>Resident</h1>
+        </div>
+        <div class="grid-header">
+                <h1>Owner</h1>
+        </div>
+        <div class="grid-header">
+                <h1>Misc</h1>
+        </div>
+
+
+
+
+        <!-- New Row 5 -->
+                    
+        <div class="grid-item" id="insertGeneralRentInfo">
+            <h1>General Help</h1>
+            <p>Credit ?s etc</p>
+        </div>
+        <div class="grid-item" id="insertMoveChecklist">
+                <h1>Move-Out</h1>
+                <p>Checklist</p>
+        </div>
+        <div class="grid-item">
+                <h1>--</h1>
+                <p>-</p>
+        </div>
+        <div class="grid-item" id="insertComplaintResponse">
+                <h1>Complaint</h1>
+                <p>Response</p>
+        </div>
+        <!-- End of block -->
+
+
+
+
+
+
+
+
+        <!-- New Row 6-->
+                        
+        <div class="grid-item" id="insertNoLongHold">
+            <h1>45 Day Max</h1>
+            <p>Hold when Vacant</p>
+        </div>
+        <div class="grid-item" id="insertLeaseBreakNotice">
+                <h1>Lease-Break</h1>
+                <p>Information</p>
+        </div>
+        <div class="grid-item">
+                <h1>-</h1>
+                <p>--</p>
+        </div>
+        <div class="grid-item" id="insertPortalResetAll">
+                <h1>All Portal</h1>
+                <p>Reset</p>
+        </div>
+        <!-- End of block -->
+
+
+
+
+
+    <!-- New Row 7-->
+                        
+    <div class="grid-item" id="insertMoveInInfo">
+        <h1>Final Move-In</h1>
+        <p>Instructions,
+                box etc</p>
+    </div>
+    <div class="grid-item" id="insertShowNotice">
+            <h1>Showings Notice</h1>
+            <p>Information</p>
+    </div>
+    <div class="grid-item">
+            <h1>--</h1>
+            <p>--</p>
+    </div>
+    <div class="grid-item" id="insertFieldStaff">
+            <h1>Field-Staff</h1>
+            <p>Response</p>
+    </div>
+    <!-- End of block -->
+
+
+
+
+
+
+    <!-- New Row 8 -->
+                      
+    <div class="grid-item" id="insertUnseenDisclaimer">
+        <h1>Site-Unseen</h1>
+        <p>Disclaimer</p>
+    </div>
+
+    <div class="grid-item" id="insertRenewalIntro">
+        <h1>Renewal Kickoff</h1>
+        <p>Corporate Fee Notice</p>
+    </div>
+
+    <div class="grid-item">
+            <h1>--</h1>
+            <p>--</p>
+    </div>
+    <div class="grid-item" id="insertReferenceQuestions">
+            <h1>Rental Reference</h1>
+            <p>Questions</p>
+    </div>
+    <!-- End of block -->
+
+
+
+
+        <!-- New Row 9 -->
+                        
+        <div class="grid-item" id="re">
+                <h1>--</h1>
+                <p>--</p>
+            </div>
+            <div class="grid-item" id="asd">
+                    <h1>--</h1>
+                    <p>--</p>
+            </div>
+            <div class="grid-item">
+                    <h1>--</h1>
+                    <p>--</p>
+            </div>
+            <div class="grid-item" id="insertVendorInsur">
+                    <h1>Vendor</h1>
+                    <p>Insurance Update</p>
+            </div>
+            <!-- End of block -->
+
+   <hr><hr><hr><hr>
+            <!-- New Row 10 -->
+                        
+    <div class="grid-item" id="1">
+
+        <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/operations.html">Operations</a></h1>
+    </div>
+    <div class="grid-item" id="11">
+            <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/accounting.html">Accounting</a></h1>
+
+    </div>
+    <div class="grid-item">
+            <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/marketing.html">Marketing</a></h1>
+
+    </div>
+    <div class="grid-item" id="111">
+            <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/accountManagement.html">Account Mgmt</a></h1>
+
+    </div>
+    <!-- End of block -->
+
+
+    <!-- New Row11 -->
+                        
+    <div class="grid-item" id="1">
+    <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/gm.html">GM</a></h1>
+    </div>
+
+    <div class="grid-item" id="11">
+            <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/accounting.html">--</a></h1>
+
+    </div>
+    <div class="grid-item">
+            <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/accounting.html">--</a></h1>
+
+    </div>
+    <div class="grid-item" id="111">
+            <h1><a href="https://movezen-io.github.io/MailZen/365Zen/src/taskpane/accounting.html">--</a></h1>
+
+    </div>
+    <!-- End of block -->
+
+
+      </section><br>
+      <h1>MoveZen CoPilot</h1>
+
+      <script src="https://movezen-io.github.io/MailZen/365Zen/src/commands/commands.js"></script>
+
+
+
+    
+</body>
+
+</html>

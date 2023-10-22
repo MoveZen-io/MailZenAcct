@@ -1,0 +1,267 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MailZen</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/.
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/> -->
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <h1 align="left">&nbsp;&nbsp;Welcome Rina and Ashlee !
+    <section class="ms-welcome__main">
+            <!-- create a link to a 2nd page named /knowledgebase -->
+            <a href="https://movezen-io.github.io/MailZenAcct/src/taskpane/knowBaseFrame.html">Find a Knowledge Base Link</a>
+            <br><a href="https://chat.openai.com/" target="_blank">Ask GPT</a>
+            <br>
+            <a href="https://drive.google.com/file/d/1J4-vAfinw3pq4jYNHX6fnpCEcHx-vmJt/view?usp=drive_link" target="_blank">NC State Manual Search</a>
+            <br>
+            <a href="https://movezen.sharepoint.com/:l:/s/Teams/FADtGwJJHLhChJQpR0ZyphcB95gmHSXLrS28EhJDqjyx2A?e=5QeMQ5" target="_blank">Maintenance Tips</a>
+
+
+        </h1><hr width="200"><br>
+            
+            
+            <!-- TITLE HEADER Each column is a topic 1= Rental Leads 2= Current Residents  3=Owners   4=Misc -->
+            <div class="grid-container">
+
+
+                <div class="grid-header">
+                    <h1>Security Deposits</h1>
+                </div>
+                <div class="grid-header">
+                    <h1>Misc</h1>
+                </div>
+                <div class="grid-header">
+                        <h1>--</h1>
+                </div>
+                <div class="grid-header">
+                        <h1>--</h1>
+                </div>
+
+            
+
+
+
+            
+                    
+                <!-- New Row 2 -->
+                
+                <div class="grid-item" id="insertsdRefund">
+                        <h1>Sec Dep</h1>
+                        <p>Refund</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertfilterRemoved"> 
+                        <h1>FilterChrge</h1>
+                        <p>Removed</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertOwnerMove">
+                        <h1>--</h1>
+                        <p>--</p>
+                </div>
+                <!-- End of block -->
+                <div class="grid-item" id="insertVendor">
+                        <h1>--</h1>
+                        <p>--</p>
+                </div>
+                <!-- End of block -->
+        
+            
+
+
+
+            
+            <!-- New Header Row 3 -->
+            
+            
+                <div class="grid-item" id="insertpayPlan">
+                        <h1>Pay Plan</h1>
+                        <p>Request</p>
+                </div>
+                <div class="grid-item" id="sdTransfer">
+                        <h1>--</h1>
+                        <p>--</p>
+                </div>
+                <div class="grid-item" id="insertTurnoverReserve">
+                        <h1>--</h1>
+                        <p>--</p>
+                </div>
+                <div class="grid-item">
+                        <h1>--</h1>
+                        <p>--</p>
+                    </a>
+                </div>
+                <!-- End of block -->
+        
+
+
+
+
+            <!-- New Row 4 -->
+            
+            <div class="grid-item" id="insertsdTransfer">
+                    <h1>Sec Dep</h1>
+                    <p>Transfer</p>
+            </div>
+            <div class="grid-item" id="inserteCheck">
+                    <h1>eCheck</h1>
+                    <p>Authorization</p>
+            </div>
+            <div class="grid-item" id="insertPlacementInfo">
+                    <h1>--</h1>
+                    <p>--</p>
+            </div>
+            <div class="grid-item">
+                    <h1>--</h1>
+                    <p>--</p>
+                </a>
+            </div>
+            <!-- End of block -->
+
+
+
+
+
+            <!-- New Row 5 -->
+                        
+            <div class="grid-item" id="insertsdNewMan">
+                    <h1>Sec Dep</h1>
+                    <p>New Manager</p>
+            </div>
+            <div class="grid-item" id="insertw9Request">
+                    <h1>W9</h1>
+                    <p>Request</p>
+            </div>
+            <div class="grid-item">
+                    <h1>--</h1>
+                    <p>--</p>
+            </div>
+            <div class="grid-item">
+                    <h1>--</h1>
+                    <p>--</p>
+                </a>
+            </div>
+            <!-- End of block -->
+
+
+
+
+
+            <!-- column header reminder  -->
+        <div class="grid-header">
+            <h1>--</h1>
+        </div>
+        <div class="grid-header">
+            <h1>--</h1>
+        </div>
+        <div class="grid-header">
+                <h1>--</h1>
+        </div>
+        <div class="grid-header">
+                <h1>--</h1>
+        </div>
+
+
+
+
+        <!-- New Row 5 -->
+                    
+        <div class="grid-item" id="insertGeneralRentInfo">
+            <h1>--</h1>
+            <p>--</p>
+        </div>
+        <div class="grid-item" id="insertMoveChecklist">
+                <h1>--</h1>
+                <p>--</p>
+        </div>
+        <div class="grid-item">
+                <h1>--</h1>
+                <p>-</p>
+        </div>
+        <div class="grid-item" id="insertComplaintResponse">
+                <h1>--</h1>
+                <p>--</p>
+        </div>
+        <!-- End of block -->
+
+
+
+
+
+
+
+
+        <!-- New Row 6-->
+                        
+        <div class="grid-item" id="insertNoLongHold">
+            <h1>--</h1>
+            <p>--</p>
+        </div>
+        <div class="grid-item" id="insertLeaseBreakNotice">
+                <h1>--</h1>
+                <p>--</p>
+        </div>
+        <div class="grid-item">
+                <h1>-</h1>
+                <p>--</p>
+        </div>
+        <div class="grid-item" id="insertPortalResetAll">
+                <h1>--</h1>
+                <p>--</p>
+        </div>
+        <!-- End of block -->
+
+
+
+
+
+    <!-- New Row 7-->
+                        
+    <div class="grid-item" id="insertMoveInInfo">
+        <h1>--</h1>
+        <p>--</p>
+    </div>
+    <div class="grid-item" id="insertShowNotice">
+            <h1>--</h1>
+            <p>--</p>
+    </div>
+    <div class="grid-item">
+            <h1>--</h1>
+            <p>--</p>
+    </div>
+    <div class="grid-item" id="insertFieldStaff">
+            <h1>--</h1>
+            <p>--</p>
+    </div>
+    <!-- End of block -->
+
+
+
+    <!-- End of block -->
+
+
+      </section><br>
+      <h1>MoveZen Accounting CoPilot</h1>
+
+      <script src="https://movezen-io.github.io/MailZenAcct/src/commands/commands.js"></script>
+
+
+    
+</body>
+
+</html>

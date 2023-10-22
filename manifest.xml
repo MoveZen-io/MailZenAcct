@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
-  <Id>0ed7a33a-029d-4e38-9603-66a67f0a6e14</Id>
-  <Version>1.0.0.0</Version>
+  <Id>db5ca966-1723-4c8f-b8ad-72e3568c9951</Id>
+  <Version>1.45.0.0</Version>
   <ProviderName>MoveZen Accounting</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="MailZenAccounting"/>
   <Description DefaultValue="Accounting outlook addin for templates and more"/>
-  <IconUrl DefaultValue="https://movezen-io.github.io/MailZenAcct/365Zen/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://movezen-io.github.io/MailZenAcct/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://movezen-io.github.io/MailZenAcct/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://movezen360.com/helpcenter/"/>
   <AppDomains>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://movezen-io.github.io/MailZenAcct/src/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://movezen-io.github.io/MailZenAcct/src/taskpane/taskpanee.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -73,13 +73,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://movezen-io.github.io/MailZenAcct/assets/icon-16.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://movezen-io.github.io/MailZenAcct/icon-16.png"/>
         <bt:Image id="Icon.32x32" DefaultValue="https://movezen-io.github.io/MailZenAcct/assets/icon-32.png"/>
         <bt:Image id="Icon.80x80" DefaultValue="https://movezen-io.github.io/MailZenAcct/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <!-- <bt:Url id="Commands.Url" DefaultValue="https://movezen-io.github.io/movezen-io-github.io/365Zen/commands.html"/> -->
-        <bt:Url id="Taskpane.Url" DefaultValue="https://movezen-io.github.io/MailZenAcct/src/taskpane/taskpane.html"/>
+    
+        <bt:Url id="Taskpane.Url" DefaultValue="https://movezen-io.github.io/MailZenAcct/src/taskpane/taskpanee.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="MoveZen Add-in"/>
